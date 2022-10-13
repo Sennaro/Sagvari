@@ -1,0 +1,14 @@
+body {
+    background: url(hatter2.gif);
+    background-size: cover;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: black;
