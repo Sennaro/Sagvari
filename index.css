@@ -26,4 +26,13 @@ a {
     transition: color 0.5s;
     font-family: Verdana;
     background-color: rgb(202, 202, 202, 0.507);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding-top: 15px;
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+    margin: 70px auto 0;
+    margin-left: 75px;
+    margin-top: 150px;
 }   
