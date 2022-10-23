@@ -11,6 +11,7 @@
       background-image: url('bgbgbg.gif');
       background-size: cover;
       background-color: black;
+      font-family: Arial, Helvetica, sans-serif;
     }
     </style>
 <body>
@@ -48,36 +49,97 @@
         <td>7.</td> <td>Töri</td> <td>Tesi</td> <td>Fizika</td> <td>Angol</td> <td>Orosz</td>
     </tr>
 </table>
-<h1> Magamról:</h1>
-<p> SZTE Gyakorló gimnázium és Általános Iskola 2020I osztály tanulója</p>
+<h1> Magamról</h1>
+<p > Unalmas ember vagyok bocsi:(</p>
+
+<a href="index.html" class="btn" style="size: 36px;"><span></span> Vissza</a>
 <style>
     td {
         background-color: rgb(255, 162, 162);
         text-align: center;
         border: solid 2px rgb(17, 26, 17);
-        height: 30px
+        height: 30px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
     }
     th {
         width: 160px;
         background-color: rgb(242, 248, 151);
+        border: solid 2px rgb(17, 26, 17);
         height: 30px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
     }
     table {
-        margin-left:auto;margin-right:auto;
+        margin-left:auto;
+        margin-right:auto;
 
     }
     p {
         color: beige;
         font-family:Arial, Helvetica, sans-serif;
-        font-size: 16px;
+        font-size: 24px;
+        margin-left: 100px;
     }
     h1 {
-        font-size: 36px;
+        font-size: 48px;
         color: beige;
+        margin-top: 10%;
+        text-align: center;
+        -webkit-text-stroke: 1px rgb(0, 0, 0);
+        color: rgb(255, 255, 255, 0.9);
+        font-family: sans-serif;
+        font-weight: bold;
     }
     h2 {
-        font-size: 36px;
+        font-size: 48px;
         color: blue;
+        -webkit-text-stroke: 1px rgb(0, 0, 0);
+        color: rgb(255, 255, 255, 0.9);
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    .btn {
+        width: 240PX;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 10px;
+        padding: 12px 0;
+        color: rgb(0, 0, 0);
+        border: 4px solid rgb(0, 0, 0);
+        position: relative;
+        z-index: 1;
+        transition: color 0.5s;
+        font-family: Verdana;
+        background-color: rgb(255, 255, 255, 0.5);
+        text-align: center;
+        color: rgb(0, 0, 0);
+        padding-top: 15px;
+        font-weight: bold;
+        background-size: cover;
+        background-position: center;
+        margin: 70px auto 0;
+        margin-top: 100px;
+        margin-left: 41.5%;
+        font-size: 24px;
+    }   
+
+    span{
+        width:  0%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgb(92, 84, 209, 0.7);
+        z-index: -1;
+        transition: 0.5s;
+
+    }
+    .btn :hover span{
+        width: 100%;
+    }
+    .btn :hover{
+         color: black;
     }
 
 </style>

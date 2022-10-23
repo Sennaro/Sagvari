@@ -8,12 +8,18 @@ h1 {
     font-weight: bold;
     vertical-align: middle;
     text-align: center;
+    padding: 0 5%;
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+    color: rgb(255, 255, 255, 0.5);
+    font-family: sans-serif;
+    font-weight: bold;
 }
 a {
     text-decoration: none;
     color: black;
+    font-size: 20px;
 }
-.banner-btn a{
+.btn a{
     width: 320PX;
     text-decoration: none;
     display: inline-block;
@@ -25,7 +31,7 @@ a {
     z-index: 1;
     transition: color 0.5s;
     font-family: Verdana;
-    background-color: rgb(202, 202, 202, 0.507);
+    background-color: rgb(255, 255, 255, 0.5);
     text-align: center;
     color: rgb(0, 0, 0);
     padding-top: 15px;
@@ -33,6 +39,24 @@ a {
     background-size: cover;
     background-position: center;
     margin: 70px auto 0;
-    margin-left: 75px;
+    margin-left: 8%;
     margin-top: 150px;
 }   
+
+.btn a span{
+    width:  0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(92, 84, 209, 0.7);
+    z-index: -1;
+    transition: 0.5s;
+
+}
+.btn a:hover span{
+    width: 100%;
+}
+.btn a:hover{
+    color: black;
+}
