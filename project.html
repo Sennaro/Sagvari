@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivike oldala</title>
+</head>
+<style>
+    body {
+        background: url(bgbgbg.gif);
+        background-size: cover;
+    }
+    h2 {
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+<body>
+    <h2> Számvizsgálat </h2>
+    <form name="urlap">
+        <input type="text" name="beszam">
+        <input type="button" value="Számvizsgálat" onclick="vizsgal()">
+    </form>
+    <p>Paritás: <span id="paritas">?</span></p>
+    <p>Osztók száma: <span id="osztok">?</span></p>
+    <p>Prím szám: <span id="prim">?</span></p>
+    <p>Négyzetszám: <span id="negyzet">?</span></p>
+    <p>Számjegyek összege: <span id="szosszeg">?</span></p>
+    <script>
+        function negyzetszam(n) {
+            var i = 1;
+            let osszeg = 1;
+            while (osszeg < n) {
+                i= i+2;
+                osszeg= osszeg + i;
+            }
+            if (osszeg == n) {
+                return "igen";
+            }
+            else {
+                return "nem";
+            }
+        }
+        function osztokszama(n) {
+            var db = 0;
+            for (let i=1; i<=n; i++){
+                if (n % i == 0){
+                    db++;
+                }
+
+            }
+            return db;
+        }
+        function szamosszeg(n) {
+            let osszeg = 0;
+            while (n > 0){
+                osszeg += n%10;
+                n=Math.floor(n/10);
+            }
+            return osszeg;
+
+        }
+
+        function vizsgal() {        
+            var a = Number(document.forms["urlap"]["beszam"].value);
+            if (a % 2 == 0)
+            {
+                document.getElementById('paritas').innerHTML = 'Páros';
+            }
+            else
+            {
+                document.getElementById('paritas').innerHTML = 'Páratlan';
+            }
+            document.getElementById("osztok").innerHTML = osztokszama(a);
+            if (osztokszama(a) == 2)
+            {
+                document.getElementById('prim').innerHTML = 'Igen';
+            }
+            else
+            {
+                document.getElementById('prim').innerHTML = 'Nem';
+            }
+            document.getElementById('negyzet').innerHTML = negyzetszam(a);
+            document.getElementById('szosszeg').innerHTML = szamosszeg(a);
+
+        }
+
+    <br>
+    <button type="button" onclick="href"/button>
+    </script>
+</body>
+</html>
